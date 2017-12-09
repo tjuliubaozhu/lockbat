@@ -35,8 +35,9 @@ goto End
 :FAIL  
 echo Invalid password 
 echo 
+echo warning! someone is trying to unlock your folder > warning.txt
 blat -install smtp.demo.com  demo@demo.com
-blat C:\a.txt -to  demo@demo.com  -u  demo@demo.com  -pw password  -subject  warning
+blat warning.txt -to  demo@demo.com  -u  demo@demo.com  -pw password  -subject  warning
 color 0a
 setlocal ENABLEDELAYEDEXPANSION
 for /l %%i in (0) do (
